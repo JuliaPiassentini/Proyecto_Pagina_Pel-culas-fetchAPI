@@ -1,0 +1,67 @@
+*{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.container-registrar {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: solid #D4AF37;
+    border-radius: 5px;
+    background-color: #080F28;
+    border: solid #D4AF37;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-registrar h2 {
+    text-align: center;
+    border: solid #D4AF37;
+    background-color: #D4AF37;
+    color: #080F28;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-group-registrar {
+    margin-bottom: 20px;
+}
+
+.form-group-registrar label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group-registrar input[type="text"],
+.form-group-registrar input[type="email"],
+.form-group-registrar input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group-registrar .register-button {
+    background-color: #D4AF37;
+    color: #080F28;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+    display: inline-block; /* Mostrar como un elemento de línea */
+}
+
+.form-group-registrar button:hover {
+    background-color: #333; /* Fondo negro oscuro al pasar el ratón */
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}

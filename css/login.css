@@ -1,0 +1,89 @@
+*{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.container_login {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: solid #D4AF37;
+    border-radius: 5px;
+    background-color: #080F28;
+    border: solid #D4AF37;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_login h2 {
+    text-align: center;
+    border: solid #D4AF37;
+    background-color: #D4AF37;
+    color: #080F28;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-group_login {
+    margin-bottom: 20px;
+}
+
+.form-group_login label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group_login input[type="text"],
+.form-group_login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group_login button {
+  /*   width: 100%;
+    padding: 10px;
+    background-color: #080F28;
+    border: solid #D4AF37;
+    border-radius: 5px;
+    /* display: inline-block; */
+    background-color: #D4AF37;
+    color: #080F28;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+    display: inline-block; /* Mostrar como un elemento de línea */
+}
+
+.form-group_login button:hover {
+    background-color: #333; /* Fondo negro oscuro al pasar el ratón */
+}
+
+.form-group_login .register-button {
+ /*    background-color: #080F28;
+    border: solid #D4AF37;
+    border-radius: 5px;
+    margin-top: 10px; */
+    /* display: inline-block; */
+
+    background-color: #D4AF37;
+    color: #080F28;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+    display: inline-block; /* Mostrar como un elemento de línea */
+}
+
+.form-group_login .register-button:hover {
+    background-color: #333; /* Fondo negro oscuro al pasar el ratón */
+}

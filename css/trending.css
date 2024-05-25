@@ -1,0 +1,68 @@
+.contenedor_trend {
+	width: 90%;
+	margin-top: 40px auto 40px auto ;
+    align-content: center;
+
+	display: flex;
+    flex-wrap: wrap;
+
+	gap: 10px;
+}
+
+.card-trend {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 8px;
+        width: 200px;
+        text-align: center;
+      
+}
+
+
+.card-trend img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+ 
+
+.card-trend h3 {
+    margin-top: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+
+
+.paginacion {
+	
+	
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
