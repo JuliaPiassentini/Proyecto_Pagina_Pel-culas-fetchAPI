@@ -32,7 +32,7 @@ tr:hover {
     background-color:#080f28 ;
 }
 .edit, .delete {
-    
+    font-size: 1.5em;
     cursor: pointer;
     text-decoration: none;
 }

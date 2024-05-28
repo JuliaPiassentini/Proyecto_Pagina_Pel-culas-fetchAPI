@@ -1,4 +1,6 @@
 /*========VALIDANDO DATOS DEL FORMULARIO DE INICIO SESION=== */
+
+//Datos harcodeados para poder ingresar sesión
 var miUsuario = "Cinefil@2024";
 var contrasenaHarcodeada = "LaReinaBatata!2024";
 
@@ -46,7 +48,7 @@ document.getElementById("formulario").addEventListener("submit", (event) => {
       !error_name.textContent &&
       !contrasenaError.textContent
     ) {
-      alert(`BIENVENID@ ${miUsuario} A NUESTRA COMUNIDAD!!`);
+      alert(`BIENVENIDO ${miUsuario} A NUESTRA COMUNIDAD DE EDITORES!!`);
       window.location.href = '../pages/admin.html'//Esta línea de código indica a JavaScript que redirija el navegador a lapágina deadministrador
       document.getElementById("formulario").reset(); //Para que se limpien los campos una vez enviado
     }

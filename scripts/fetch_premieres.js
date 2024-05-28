@@ -1,7 +1,3 @@
-//let btnMore = document.getElementById('load-trend');
-
-//btnMore.addEventListener('click', ()=>{})
-
 let pagina = 1;
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
@@ -26,7 +22,7 @@ const imageBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
 const cargarPeliculas = async() => {
 	try {
-		const respuesta = await fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=f1805f491aa4514e0e303209f10d218f&page=${pagina}`);
+		const respuesta = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=f1805f491aa4514e0e303209f10d218f&page=${pagina}`);
 	
 		console.log(respuesta);
 
@@ -37,9 +33,8 @@ const cargarPeliculas = async() => {
 			console.log(datos);
             console.log(arrayPeliculas);
 
-            const contenedorTrend = document.getElementById('contenedor_trend');
-			contenedorTrend.innerHTML = '';//Limpiar el contenedor antes de agregar nuevas películas para que no se acumulen en la paginación
-
+            const contenedorPremiere = document.getElementById('contenedor_premiere');
+			contenedorPremiere.innerHTML = '';//Limpiar el contenedor antes de agregar nuevas películas para que no se acumulen en la paginación
 
 			arrayPeliculas.forEach(pelicula => {
 
@@ -72,7 +67,7 @@ const cargarPeliculas = async() => {
 
 
                 // Añadir la tarjeta completa al contenedor de tarjetas
-                contenedorTrend.appendChild(card_trend);
+                contenedorPremiere.appendChild(card_trend);
 			});
 
 			

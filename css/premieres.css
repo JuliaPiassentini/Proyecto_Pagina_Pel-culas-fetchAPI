@@ -1,0 +1,100 @@
+.main-trending{
+	margin-top: 2.5em;
+}
+
+
+.main-trending h2 {
+	padding-top: 5em;
+}
+
+.contenedor_premiere {
+	min-width: 100%;
+	margin-top: 1.5em;
+	padding-top: 0.5em;
+    align-content: center;
+
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+
+	gap: 10px;
+}
+
+.card-trend {
+        border:1px  solid #d4af37;;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 8px;
+        width: 200px;
+        text-align: center;
+		
+		overflow: hidden;
+		padding: 0;
+      
+}
+
+.card-trend:hover{
+	border:3px solid #d4af37bc;
+	border-radius: 8px;
+        padding: 16px;
+        margin: 8px;
+        width: 200px;
+        text-align: center;
+		
+		overflow: hidden;
+		padding: 0;
+		cursor: pointer;
+}
+
+
+.card-trend img {
+    width: 100%;
+    height: auto;
+   
+  }
+
+ 
+
+.card-trend h3 {
+   /* margin-top: 12px;*/
+    font-size: 1.2em;
+    font-weight: bold;
+	padding: 0.1em;
+  }
+
+  .card-trend p {
+	margin-bottom: 0.1em;
+  }
+
+
+.paginacion {
+	
+	
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 40px;
+	width: 125px;
+	background: #060b1e;
+	color: #d4af37;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+	margin-top: 2em;
+}
+
+.paginacion button:hover {
+	background: #22398dad;
+}

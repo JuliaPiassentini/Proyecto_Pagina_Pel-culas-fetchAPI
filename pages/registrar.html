@@ -6,6 +6,7 @@
 <title>Formulario de Registro</title>
 <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../css/registrar.css">
 </head>
 
 <header class="cabecera">
@@ -37,19 +38,23 @@
     <form id="registroForm" action="#" method="post">
         <div class="form-group-registrar">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required maxlength="45">
+            <input type="text" id="nombre" name="nombre"  maxlength="45" placeholder="Ingresa tu nombre">
+            <div class="error-message" id="nameError"></div>
         </div>
         <div class="form-group-registrar">
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required maxlength="45">
+            <input type="text" id="apellido" name="apellido"  maxlength="45" placeholder="Ingresa tu apellido ">
+            <div class="error-message" id="surnameError"></div>
         </div>
         <div class="form-group-registrar">
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="usuario@gmail.com">
+            <div class="error-message" id="emailError"></div>
         </div>
         <div class="form-group-registrar">
             <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
+            <input type="password" id="contrasena" name="contrasena" placeholder="La contraseña debe tener al menos 8 caracteres,incluyendo números, mayúsculas,minúsculas y caracteres especiales">
+            <div class="error-message" id="passwordError"></div>
         </div>
         <div class="form-group-registrar">
             <button class="register-button" type="submit">Registrarse</button>
@@ -61,5 +66,6 @@
 </main>
 
 <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
+<script src="./../scripts/registerForm_validation.js"></script>
 </body>
 </html>
