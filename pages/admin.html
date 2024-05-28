@@ -7,7 +7,7 @@
     <title>Pochocleras-Pelis | Películas Online</title>
     <link rel="icon" href="./../images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/trending.css">
+    <link rel="stylesheet" href="../css/admin.css">
     
 
 </head>
@@ -36,14 +36,48 @@
     
 </header>
 
-<section class="movies container main-trending">
-    <h2>PELÍCULAS MÁS VISTAS</h2>
-    <div class="contenedor_trend" id="contenedor_trend"></div>
+<section class="movies container main-admin">
+    <h2>ADMINISTRADOR</h2>
+    <div class="table-container">
+        <h3>Tabla de Películas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TÍTULO DE PELÍCULA</th>
+                    <th>CATEGORÍA</th>
+                    <th>EDITAR</th>
+                    <th>ELIMINAR</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td>1</td>
+                    <td>Pelicula 1</td>
+                    <td>Acción</td>
+                    <td class="edit">🖊</td>
+                    <td class="delete">🗑</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pelicula 2</td>
+                    <td>Drama</td>
+                    <td class="edit">🖊</td>
+                    <td class="delete">🗑</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pelicula 2</td>
+                    <td>Drama</td>
+                    <td class="edit">🖊</td>
+                    <td class="delete">🗑</td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
 
-	<div class="paginacion">
-		<button id="btnAnterior"> <<<  Anterior</button>
-		<button id="btnSiguiente">Siguiente   >>> </button>
-	</div>
+	
 </section>
 
 
@@ -75,7 +109,7 @@
    
    
     <script src="./../script.js"></script>
-    <script src="./../scripts/fetch_trending.js"></script>
+    <script src="./../scripts/loginForm_validation.js"></script>
      
     <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
 

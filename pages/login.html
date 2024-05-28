@@ -40,14 +40,16 @@
     <main>
         <div class="container_login">
             <h2>Iniciar Sesión</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="formulario">
                 <div class="form-group_login">
                     <label for="username">Usuario:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username"  maxlength="45" placeholder="Escribe aquí tu nombre de usuario" >
+                    <div class="error-message" id="nameError"></div>
                 </div>
                 <div class="form-group_login">
                     <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password"  maxlength="45" placeholder="••••••••••••••••••••••••••••••••••••">
+                    <div class="error-message" id="passwordError"></div>
                 </div>
                 <div class="form-group_login">
                     <button type="submit">Iniciar Sesión</button>
@@ -78,6 +80,7 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="./../scripts/loginForm_validation.js"></script>
     <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
  
 </body>

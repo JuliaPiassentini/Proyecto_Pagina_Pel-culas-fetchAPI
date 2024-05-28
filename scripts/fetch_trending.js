@@ -20,7 +20,7 @@ btnAnterior.addEventListener('click', () => {
 	}
 });
 
-//URL base para las imágenes de TMDb Define la URL base para las imágenes con el tamaño w500. Puedes cambiar el tamaño según tus necesidades (por ejemplo, w200, w300, etc.).
+//URL base para las imágenes de TMDb Define la URL base para las imágenes con el tamaño w500.Se cambiar el tamaño según tus necesidades (por ejemplo, w200, w300, etc.).
 const imageBaseUrl = 'https://image.tmdb.org/t/p/w500';
  
 
