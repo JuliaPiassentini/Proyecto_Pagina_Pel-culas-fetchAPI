@@ -34,7 +34,10 @@
                         <p>Login</p>
                     </a>
                 </div>
-                <input class="input-search" type="search" name="search" placeholder="Buscar 🔍">
+                
+                    <input class="input-search" type="search" name="search" id="searchInput" placeholder="Buscar 🔍">
+
+                
     
             </div>
             <a href="" class="icon-menu"><i class="fa-solid fa-bars" style="color: #FFD43B;"></i></a>
@@ -521,7 +524,8 @@
    
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!--CDN PLUGIN JS para typewriter effect-->
     <script src="script.js"></script>
-    <script src="./scripts/fetch_trending.js"></script>
+    <script src="./scripts/fetch_search_movie.js"></script>
+    <script src="./scripts/searchMovie.js"></script><!--En este archivo capturo valor de búsqueda y lo almaceno de manera local en el navegador para que pueda ser utilizado en otra pagina, resulst.html y fetch_search_movie.js-->
     
      
     <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
