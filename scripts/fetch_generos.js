@@ -14,6 +14,12 @@ async function fetchGenres() {
     }
 }
 
+
+
+
+
+
+
 function displayGenres(genres) {//Muestra los géneros en una lista y añade un evento de clic a cada género para llamar a fetchMoviesByGenre con el ID del género
     const genresList = document.getElementById('toggle-submenu2');
     genres.forEach(genre => {
@@ -28,6 +34,11 @@ function displayGenres(genres) {//Muestra los géneros en una lista y añade un 
     genresList.appendChild(listItem);
     });
 }
+
+
+
+
+
 
 /*async function fetchMoviesByGenre(genreId) {
 

@@ -7,33 +7,50 @@
     <title>Pochocleras-Pelis | Películas Online</title>
     <link rel="icon" href="./../images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/submenu.css">
     <link rel="stylesheet" href="../css/trending.css">
     
 
 </head>
 <body>
-<header class="cabecera">
-    <div class="menu container">
-        <a href="../index.html"> <img src="../images/logo-04-pochocleras-pelis.webp" class="logo"
-            alt="Logo de Pochocleras-Pelis"></a>
-            <div class="responsive-menu " id="menu-items">
-            <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../index.html#trending">Películas</a></li>
-                <li><a href="../index.html#side-categories">Géneros</a></li>
-
-            </ul>
-        </nav>
-        <a href="login.html" class="btn-log">
-            <p>Login</p>
-        </a>
-    </div> 
-    <a href="" class="icon-menu" ><i class="fa-solid fa-bars" style="color: #FFD43B;"></i></a>
-    <a href="" class="icon-menu-x"><i class="fa-solid fa-x" style="color: #FFD43B;"></i></a>
-
-    </div> 
+    <header class="cabecera menu container ">
+         
     
+        <a href="../index.html"> <img src="../images/logo-04-pochocleras-pelis.webp" class="logo" alt="Logo de Pochocleras-Pelis"></a>
+        <div class="responsive-menu " id="menu-items">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" style="align-self:flex-start;padding: 0.7em;width: 100%;">Inicio</a></li>
+                    <li id="submenu-peliculas" class="submenu-peliculas" >                           
+                        <a href="#trending" id="submenu-nav">Películas</a>
+                        <ul id="toggle-submenu" class="toggle-submenu" >
+                            <li><a href="./trending.html">Más vistas</a></li>
+                            <li><a href="./premieres.html">Estreno</a></li>
+                            <li><a href="#">Mejor puntuadas</a></li>
+                        </ul>                             
+                        </li>
+                    <li id="submenu-peliculas2" class="submenu-peliculas2">
+                        <a href="./generos.html" id="submenu-nav2" >Géneros</a>
+                        <ul id="toggle-submenu2" class="toggle-submenu2" >
+                           
+                        </ul> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-log-contenedor">
+                <a href="./login.html" class="btn-log">
+                    <p>Login</p>
+                </a>
+            </div>            
+                <input class="input-search" type="search" name="search" id="searchInputPages" placeholder="Buscar 🔍">
+
+            
+
+        </div>
+        <a href="" class="icon-menu"><i class="fa-solid fa-bars" style="color: #FFD43B;"></i></a>
+        <a href="" class="icon-menu-x"><i class="fa-solid fa-x" style="color: #FFD43B;"></i></a>
+    
+
 </header>
 
 <section class="movies container main-trending">
@@ -75,7 +92,12 @@
    
    
     <script src="./../script.js"></script>
-    <script src="./../scripts/fetch_trending.js"></script>
+    <script src="../scripts/submenu.js"></script>
+    <script src="../scripts/fetch_trending.js"></script>
+    <script src="../scripts/fetch_generos.js"></script>
+    <script src="../scripts/fetch_search_movie.js"></script>
+    <script src="../scripts/searchMovie.js"></script>
+    
      
     <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
 
