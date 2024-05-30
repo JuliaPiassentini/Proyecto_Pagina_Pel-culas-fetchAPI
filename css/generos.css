@@ -1,0 +1,48 @@
+.movies-genero-contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie {
+    background-color: #f0f8ff9f ;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.movie-title {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    
+}
+
+.movie div {
+    padding: 10px;
+}
+
+.movie-overview {
+    font-size: 15px;
+    color: #040827;
+}
+

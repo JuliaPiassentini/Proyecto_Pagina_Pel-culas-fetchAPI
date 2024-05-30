@@ -9,6 +9,7 @@
 
     <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/submenu.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -23,10 +24,28 @@
             <div class="responsive-menu " id="menu-items">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#trending">Películas</a></li>
-                        <li><a href="#side-categories">Géneros</a></li>
-            
+                        <li><a href="index.html" style="align-self:flex-start;padding: 0.7em;width: 100%;">Inicio</a></li>
+                        <li id="submenu-peliculas" class="submenu-peliculas" >                           
+                            <a href="#trending" id="submenu-nav">Películas</a>
+                            <ul id="toggle-submenu" class="toggle-submenu" >
+                                <li><a href="./pages/trending.html">Más vistas</a></li>
+                                <li><a href="./pages/premieres.html">Estreno</a></li>
+                                <li><a href="#">Mejor puntuadas</a></li>
+                            </ul>                             
+                            </li>
+                        <li id="submenu-peliculas2" class="submenu-peliculas2">
+                            <a href="#side-categories" id="submenu-nav2" >Géneros</a>
+                            <ul id="toggle-submenu2" class="toggle-submenu2" >
+                              <!--<li class=""><a href="#trending">Acción</a></li>
+                                <li class=""><a href="#trending">Terror</a></li>
+                                <li class=""><a href="#trending">Aventura</a></li>
+                                <li class=""><a href="#trending">Drama</a></li>
+                                <li class=""><a href="#trending">Documental</a></li>
+                                <li class=""><a href="#trending">Ciencia Ficción</a></li>
+                                <li class=""><a href="#trending">Romance</a></li>
+                                <li class=""><a href="#trendings">Animación</a></li>-->  
+                            </ul> 
+                        </li>
                     </ul>
                 </nav>
                 <div class="btn-log-contenedor">
@@ -524,6 +543,8 @@
    
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!--CDN PLUGIN JS para typewriter effect-->
     <script src="script.js"></script>
+    <script src="./scripts/submenu.js"></script>
+    <script src="./scripts/fetch_generos.js"></script>
     <script src="./scripts/fetch_search_movie.js"></script>
     <script src="./scripts/searchMovie.js"></script><!--En este archivo capturo valor de búsqueda y lo almaceno de manera local en el navegador para que pueda ser utilizado en otra pagina, resulst.html y fetch_search_movie.js-->
     

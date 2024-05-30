@@ -1,0 +1,67 @@
+.submenu-peliculas{
+    display: flex;
+     flex-direction: column;
+      margin-top: 106px;
+      margin-left: 0px;
+      align-content: center;
+      padding: 0.7em;
+      border-radius: 2%;
+     
+}
+.submenu-peliculas a,.submenu-peliculas2 a{
+    align-self:flex-start;
+}
+
+ul .toggle-submenu{
+    visibility:hidden;
+     display: flex; 
+     flex-direction: column;
+      gap: 5px;
+      align-items: flex-start;
+      padding-top: 15px;
+      font-size: 0.8em;
+}
+
+ul.toggle-submenu li a:hover {
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.623);
+    
+}
+
+ul.toggle-submenu2 li:hover {
+    text-decoration: none;
+    color: #f0f8ff9f;
+    cursor: pointer;
+    
+}
+
+.submenu-peliculas2{
+    display: flex;
+     flex-direction: column;
+      margin-top: 24em;
+      margin-left: 0%;
+      align-content: center;
+      padding: 0.7em;
+      border-radius: 2%;
+      
+      
+}
+
+ul.toggle-submenu2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    padding-top: 15px;
+    font-size: 0.8em;
+   visibility:hidden;
+
+}
+
+.submenu-peliculas2 a{
+    margin-right: 0px;
+}
+
+.submenu-peliculas2 a{
+    margin-left: 0px;
+}
