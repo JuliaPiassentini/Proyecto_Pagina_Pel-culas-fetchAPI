@@ -39,10 +39,10 @@ body {
 }
 
 main{
-  margin-top: 5rem;
+  margin-top:0;
 }
 
-.container {
+.container1 {
   max-width: 1200px;
   margin: 0 auto;
 }
