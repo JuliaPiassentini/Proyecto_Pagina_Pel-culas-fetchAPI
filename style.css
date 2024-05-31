@@ -63,7 +63,7 @@ main{
   justify-content: space-around;
   margin: 0 auto;
   font-size: 25px;
-  position: fixed;
+ /*position:fixed;Se quite el fixed del nav presenta inconvenientes con los submenues al desplegarse bloquean otras funciones*/
   top:0;
   left: 0;  
   min-width: 100%;
@@ -71,6 +71,7 @@ main{
   background-color: #080f28;
  /*  opacity: 0.8; */
   box-shadow: 0 12px 25px -16px black; 
+  margin-bottom: 0;
 }
 
 a {
@@ -119,7 +120,7 @@ height: 2em;
 }
 
 .header-content {
- /*  margin-top: 10px; */
+ margin-top: 0; 
   background-image: url(./images/header-portada.png);
   background-position: top center;
   background-repeat: no-repeat;

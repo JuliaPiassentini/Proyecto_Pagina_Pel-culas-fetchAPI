@@ -1,11 +1,14 @@
 let desplegar = document.getElementById('submenu-nav');
 
+
 desplegar.addEventListener('mouseover',()=>{
     let submenu = document.getElementById('toggle-submenu');
+  
     let submenu_peliculas = document.getElementById('submenu-peliculas');
-    if (submenu.style.visibility === "hidden" || submenu.style.visibility === ""){
+    if (submenu.style.visibility === "hidden" || submenu.style.visibility === "" ){
         submenu.style.visibility = "visible";
         submenu_peliculas.style.backgroundColor ="#080f28";
+        
     }
 });
 
