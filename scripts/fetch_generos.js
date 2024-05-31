@@ -1,4 +1,9 @@
+//Este código fue utilizado para"pintar" lalista de generos traidas del fetch a la API en el menu desplegable generos de la navbar luego surgio laidea de reutilizar el codigo y con la misma funcion pintar las lista de generos en el aside hubo que guardar los id de los dististos UL en un array y agregar otras funciones esto se hizo en el archivo fetch_generosEnMenues.js
+
+
 // Reemplaza 'TU_CLAVE_API' con tu clave API de TMDB
+
+
 const apiKey = 'f1805f491aa4514e0e303209f10d218f';
 const genresApiUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=es-ES`;
 
@@ -19,24 +24,22 @@ async function fetchGenres() {
 
 
 
-
-function displayGenres(genres) {//Muestra los géneros en una lista y añade un evento de clic a cada género para llamar a fetchMoviesByGenre con el ID del género
-    const genresList = document.getElementById('toggle-submenu2');
+function displayGenres(genres,menuId) {//Muestra los géneros en una lista y añade un evento de clic a cada género para llamar a fetchMoviesByGenre con el ID del género
+    const genresList = document.getElementById(menuId);
+   
     genres.forEach(genre => {
         const listItem = document.createElement('li');
         listItem.textContent = genre.name;
     // Añadir evento de clic que guarda el ID del género en localStorage y redirige a una nueva página
-    listItem.addEventListener('click', () => {
+   listItem.addEventListener('click', () => {
         localStorage.setItem('selectedGenreId', genre.id);//Guardamos id en almacenamiento local para no tener que construir URLS y pasarla por parametros
         localStorage.setItem('nombreGeneroSelet',genre.name);//Guardo Nombre del genero seleccionado para utilizrlo en otro archivo js
         window.open('./pages/generos.html', '_blank');
     });
     genresList.appendChild(listItem);
+    //genresList2.appendChild(listItem2);
     });
 }
-
-
-
 
 
 
@@ -84,5 +87,8 @@ function displayMovies(movies) {
 }*/
 
 
+
 document.addEventListener('DOMContentLoaded', fetchGenres);
+
+
 

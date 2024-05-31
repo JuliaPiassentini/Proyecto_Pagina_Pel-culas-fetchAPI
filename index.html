@@ -17,7 +17,7 @@
 
 <body >
 
-    <header class="cabecera menu container1 " id="menu-general">
+    <header class="cabecera menu container " id="menu-general">
          
     
             <a href="index.html"> <img src="images/logo-04-pochocleras-pelis.webp" class="logo" alt="Logo de Pochocleras-Pelis"></a>
@@ -80,21 +80,21 @@
     <h2>PELÍCULAS POR GÉNERO</h2>
     <div class="category-container" >
         <nav class="topnav" id="myTopnav">
-         <ul class="category-list">
-            <li class="category-item-list"><a href="#trending">Acción</a></li>
+         
+            <ul id="toggle-submenu3" class="category-list" >
+                               
+            </ul> 
+           <!-- <li class="category-item-list"><a href="#trending">Acción</a></li>
             <li class="category-item-list"><a href="#trending">Terror</a></li>
             <li class="category-item-list"><a href="#trending">Aventura</a></li>
             <li class="category-item-list"><a href="#trending">Drama</a></li>
             <li class="category-item-list"><a href="#trending">Documental</a></li>
             <li class="category-item-list"><a href="#trending">Ciencia Ficción</a></li>
             <li class="category-item-list"><a href="#trending">Romance</a></li>
-            <li class="category-item-list"><a href="#trendings">Animación</a></li>
+            <li class="category-item-list"><a href="#trendings">Animación</a></li>-->
             
         
-        <!-- esta clase hace que se vea el icono hamburguesa -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-       <i class="fa fa-bars"></i> 
-      </a>
+     
     </nav>
 </aside>
 
@@ -537,7 +537,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!--CDN PLUGIN JS para typewriter effect-->
     <script src="script.js"></script>
     <script src="./scripts/submenu.js"></script>
-    <script src="./scripts/fetch_generos.js"></script>
+    <script src="./scripts/fetch_generosEnMenues.js"></script>
     <script src="./scripts/fetch_search_movie.js"></script>
     <script src="./scripts/searchMovie.js"></script><!--En este archivo capturo valor de búsqueda y lo almaceno de manera local en el navegador para que pueda ser utilizado en otra pagina, resulst.html y fetch_search_movie.js-->
     

@@ -42,7 +42,7 @@ main{
   margin-top:0;
 }
 
-.container1 {
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -323,7 +323,8 @@ height: 2em;
   border: solid #080f28;
 }
 
-/*------------------------//ESTILOS ASIDE PELICULAS POR CATEGORÍA//--------------------------------------------------------*/
+/*------------------------//ESTILOS ASIDE PELICULAS POR CATEGORÍA//----------------------------------------------------*/
+
 .sidebar h2 {
   
   letter-spacing: 0.03em;
@@ -334,6 +335,7 @@ height: 2em;
   border-radius: 2%;
   padding-top: 0.5em;
   padding: 1em;
+  margin-top: 1em;
 }
 
 .category-list{
@@ -341,16 +343,19 @@ height: 2em;
   flex-direction: column;
 }
 
-.category-container ul li a {
+.category-container ul li  {
   display: inline-block;
   font-size: 1.2em;
   padding: 0.3em;
   /*margin: 0.3em;*/
+  cursor: pointer;
+  color:#d4af37;
 }
 
-.category-container ul li a:hover {
+.category-container ul li:hover {
   background-color: #202746;
   width: 100%;
+ 
 }
 
 /*------------------------//ESTILOS FOOTER//--------------------------------------------------------*/
